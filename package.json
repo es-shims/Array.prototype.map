@@ -4,6 +4,8 @@
 	"description": "An ES5 spec-compliant `Array.prototype.map` shim/polyfill/replacement that works as far down as ES3.",
 	"main": "index.js",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
+		"preversion": "auto-changelog",
 		"prelint": "evalmd README.md",
 		"lint": "eslint .",
 		"pretest": "npm run lint",
@@ -41,12 +43,14 @@
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^14.1.0",
+		"auto-changelog": "^1.16.1",
 		"covert": "^1.1.1",
 		"eslint": "^6.4.0",
 		"evalmd": "^0.0.19",
 		"functions-have-names": "^1.1.1",
 		"has-strict-mode": "^1.0.0",
 		"is-string": "^1.0.4",
+		"safe-publish-latest": "^1.1.3",
 		"tape": "^4.11.0"
 	},
 	"dependencies": {
@@ -54,5 +58,10 @@
 		"es-abstract": "^1.14.2",
 		"es-array-method-boxes-properly": "^1.0.0",
 		"function-bind": "^1.1.1"
+	},
+	"auto-changelog": {
+		"backfillLimit": false,
+		"commitLimit": false,
+		"template": "keepachangelog"
 	}
 }
