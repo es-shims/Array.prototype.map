@@ -4,6 +4,7 @@
 	"extends": "@ljharb",
 
 	"rules": {
+		"array-bracket-newline": 0,
 		"id-length": 0,
 		"max-statements-per-line": [2, { "max": 2 }],
 		"max-statements": [2, 19],
