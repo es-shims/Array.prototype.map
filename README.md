@@ -8,8 +8,6 @@
 
 [![npm badge][npm-badge-png]][package-url]
 
-[![browser support][testling-svg]][testling-url]
-
 An ES5 spec-compliant `Array.prototype.map` shim/polyfill/replacement that works as far down as ES3.
 
 This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the [spec](http://www.ecma-international.org/ecma-262/5.1/).
@@ -58,8 +56,6 @@ Simply clone the repo, `npm install`, and run `npm test`
 [deps-url]: https://david-dm.org/es-shims/Array.prototype.map
 [dev-deps-svg]: https://david-dm.org/es-shims/Array.prototype.map/dev-status.svg
 [dev-deps-url]: https://david-dm.org/es-shims/Array.prototype.map#info=devDependencies
-[testling-svg]: https://ci.testling.com/es-shims/Array.prototype.map.png
-[testling-url]: https://ci.testling.com/es-shims/Array.prototype.map
 [npm-badge-png]: https://nodei.co/npm/array.prototype.map.png?downloads=true&stars=true
 [license-image]: http://img.shields.io/npm/l/array.prototype.map.svg
 [license-url]: LICENSE
