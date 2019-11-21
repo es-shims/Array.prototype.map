@@ -29,8 +29,8 @@ var map = require('array.prototype.map');
 var assert = require('assert');
 /* when Array#map is not present */
 delete Array.prototype.map;
-var shimmedEvery = map.shim();
-assert.equal(shimmedEvery, map.getPolyfill());
+var shimmedMap = map.shim();
+assert.equal(shimmedMap, map.getPolyfill());
 var arr = [1, 2, 3];
 var add4 = function (x) { return x + 4; };
 assert.deepEqual(arr.map(add4), map(arr, add4));
@@ -40,8 +40,8 @@ assert.deepEqual(arr.map(add4), map(arr, add4));
 var map = require('array.prototype.map');
 var assert = require('assert');
 /* when Array#map is present */
-var shimmedEvery = map.shim();
-assert.equal(shimmedEvery, Array.prototype.map);
+var shimmedMap = map.shim();
+assert.equal(shimmedMap, Array.prototype.map);
 assert.deepEqual(arr.map(add4), map(arr, add4));
 ```
 
