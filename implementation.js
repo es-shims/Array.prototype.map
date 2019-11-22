@@ -1,14 +1,14 @@
 'use strict';
 
 var ES = require('es-abstract/es2019');
-var bind = require('function-bind');
+var callBound = require('es-abstract/helpers/callBound');
 var isString = require('is-string');
 
 // Check failure of by-index access of string characters (IE < 9) and failure of `0 in boxedString` (Rhino)
 var boxedString = Object('a');
 var splitString = boxedString[0] !== 'a' || !(0 in boxedString);
 
-var strSplit = bind.call(Function.call, String.prototype.split);
+var strSplit = callBound('String.prototype.split');
 
 module.exports = function map(callbackfn) {
 	var O = ES.ToObject(this);
