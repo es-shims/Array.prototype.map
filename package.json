@@ -16,7 +16,9 @@
 		"test:shimmed": "node test/shimmed",
 		"test:module": "node test/index",
 		"testling": "npx testling --html > test.html",
-		"coverage": "covert test/*.js"
+		"coverage": "covert test/*.js",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -63,8 +65,10 @@
 		"is-string": "^1.0.4"
 	},
 	"auto-changelog": {
-		"backfillLimit": false,
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
 		"commitLimit": false,
-		"template": "keepachangelog"
+		"backfillLimit": false
 	}
 }
