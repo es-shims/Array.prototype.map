@@ -1,6 +1,14 @@
 'use strict';
 
-var ES = require('es-abstract/es2019');
+var ArraySpeciesCreate = require('es-abstract/2019/ArraySpeciesCreate');
+var Call = require('es-abstract/2019/Call');
+var CreateDataPropertyOrThrow = require('es-abstract/2019/CreateDataPropertyOrThrow');
+var Get = require('es-abstract/2019/Get');
+var HasProperty = require('es-abstract/2019/HasProperty');
+var IsCallable = require('es-abstract/2019/IsCallable');
+var ToUint32 = require('es-abstract/2019/ToUint32');
+var ToObject = require('es-abstract/2019/ToObject');
+var ToString = require('es-abstract/2019/ToString');
 var callBound = require('es-abstract/helpers/callBound');
 var isString = require('is-string');
 
@@ -11,12 +19,12 @@ var splitString = boxedString[0] !== 'a' || !(0 in boxedString);
 var strSplit = callBound('String.prototype.split');
 
 module.exports = function map(callbackfn) {
-	var O = ES.ToObject(this);
+	var O = ToObject(this);
 	var self = splitString && isString(O) ? strSplit(O, '') : O;
-	var len = ES.ToUint32(self.length);
+	var len = ToUint32(self.length);
 
 	// If no callback function or if callback is not a callable function
-	if (!ES.IsCallable(callbackfn)) {
+	if (!IsCallable(callbackfn)) {
 		throw new TypeError('Array.prototype.map callback must be a function');
 	}
 
@@ -25,15 +33,15 @@ module.exports = function map(callbackfn) {
 		T = arguments[1];
 	}
 
-	var A = ES.ArraySpeciesCreate(O, len);
+	var A = ArraySpeciesCreate(O, len);
 	var k = 0;
 	while (k < len) {
-		var Pk = ES.ToString(k);
-		var kPresent = ES.HasProperty(O, Pk);
+		var Pk = ToString(k);
+		var kPresent = HasProperty(O, Pk);
 		if (kPresent) {
-			var kValue = ES.Get(O, Pk);
-			var mappedValue = ES.Call(callbackfn, T, [kValue, k, O]);
-			ES.CreateDataPropertyOrThrow(A, Pk, mappedValue);
+			var kValue = Get(O, Pk);
+			var mappedValue = Call(callbackfn, T, [kValue, k, O]);
+			CreateDataPropertyOrThrow(A, Pk, mappedValue);
 		}
 		k += 1;
 	}
