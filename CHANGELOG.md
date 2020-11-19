@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/es-shims/Array.prototype.map/compare/v1.0.2...v1.0.3) - 2020-11-19
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`7f300c8`](https://github.com/es-shims/Array.prototype.map/commit/7f300c8dc386f6452a8a742c3ff1955f79fca448)
+- [meta] do not publish github action workflow files [`59276a2`](https://github.com/es-shims/Array.prototype.map/commit/59276a22dbac0a431e422d7056b06a51c565c0ed)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`,  `tape` [`3502b73`](https://github.com/es-shims/Array.prototype.map/commit/3502b73827b0998edd6538ce7728d5fd9933c15f)
+- [Deps] update `es-abstract`; use `call-bind` where applicable [`37643d8`](https://github.com/es-shims/Array.prototype.map/commit/37643d8611c54b4b7f159532b4a7ea8fc183cb6b)
+- [Tests] run `nyc` on all tests [`78049a0`](https://github.com/es-shims/Array.prototype.map/commit/78049a085944abd2186d9d7fbcf442b19b11d1e7)
+- [actions] add "Allow Edits" workflow [`9e486a9`](https://github.com/es-shims/Array.prototype.map/commit/9e486a9865d5874768ed414b1e1cf30ec025fed7)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `functions-have-names`, `tape` [`fef8cac`](https://github.com/es-shims/Array.prototype.map/commit/fef8cac1ed6b3f37fcc8d77e44603d0f885ab4a3)
+- [Tests] run `es-shim-api` in postlint; use `tape` runner [`4b26f09`](https://github.com/es-shims/Array.prototype.map/commit/4b26f09fcac54df57fb496ca31f435336e1ef470)
+- [Dev Deps] update `auto-changelog`, `tape` [`6d3bb01`](https://github.com/es-shims/Array.prototype.map/commit/6d3bb01f5d092fce194a51d2782133803b8801ee)
+- [Deps] update `es-abstract`, `is-string` [`88bce11`](https://github.com/es-shims/Array.prototype.map/commit/88bce1118b8452c9f6c89d68f2f247f1946e89dd)
+- [Dev Deps] update `auto-changelog`; add `aud` [`6bfd366`](https://github.com/es-shims/Array.prototype.map/commit/6bfd3666905d45e76a3b988f01720c98619e84a4)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`fcdb329`](https://github.com/es-shims/Array.prototype.map/commit/fcdb329c0bb0f23a77c4092dbdbed0e1073b4582)
+- [Deps] update `es-abstract` [`9ddb318`](https://github.com/es-shims/Array.prototype.map/commit/9ddb31815b8254a2d1f2fc1e9b37da9b42ed979e)
+- [Tests] only audit prod deps [`61176f9`](https://github.com/es-shims/Array.prototype.map/commit/61176f995d0c58348a95f04b8b15aa51ba21711f)
+
 ## [v1.0.2](https://github.com/es-shims/Array.prototype.map/compare/v1.0.1...v1.0.2) - 2019-12-16
 
 ### Commits
