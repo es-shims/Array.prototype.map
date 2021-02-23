@@ -1,4 +1,4 @@
-require('../shim')();
+require('../auto');
 
 var test = require('tape');
 var defineProperties = require('define-properties');
@@ -22,9 +22,7 @@ test('shimmed', function (t) {
 		et.end();
 	});
 
-	var supportsStrictMode = (function () { return typeof this === 'undefined'; }());
-
-	t.test('bad array/this value', { skip: !supportsStrictMode }, function (st) {
+	t.test('bad array/this value', { skip: !hasStrictMode }, function (st) {
 		st['throws'](function () { return Array.prototype.map.call(undefined, 'a'); }, TypeError, 'undefined is not an object');
 		st['throws'](function () { return Array.prototype.map.call(null, 'a'); }, TypeError, 'null is not an object');
 		st.end();
