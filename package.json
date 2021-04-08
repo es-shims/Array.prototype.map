@@ -4,7 +4,8 @@
 	"description": "An ES5 spec-compliant `Array.prototype.map` shim/polyfill/replacement that works as far down as ES3.",
 	"main": "index.js",
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
+		"prepublishOnly": "safe-publish-latest",
 		"preversion": "auto-changelog",
 		"prelint": "evalmd README.md",
 		"lint": "eslint .",
