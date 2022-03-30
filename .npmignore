@@ -67,3 +67,12 @@ yarn.lock
 
 # Github actions
 .github/workflows
+
+# Project Tests
+test
+
+# Project Dev Configs
+.eslintignore
+.eslintrc
+.editorconfig
+.nycrc
