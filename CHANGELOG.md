@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.6](https://github.com/es-shims/Array.prototype.map/compare/v1.0.5...v1.0.6) - 2023-09-06
+
+### Commits
+
+- [Deps] update `define-properties`, `es-abstract` [`accd64a`](https://github.com/es-shims/Array.prototype.map/commit/accd64a9aff33e13ad5b6f6f32e738e8d898c076)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `tape` [`d1d5cb1`](https://github.com/es-shims/Array.prototype.map/commit/d1d5cb1bb126140d5ad3d55705e1bf3afcbb40cd)
+
 ## [v1.0.5](https://github.com/es-shims/Array.prototype.map/compare/v1.0.4...v1.0.5) - 2022-11-03
 
 ### Commits
