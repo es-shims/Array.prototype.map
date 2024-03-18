@@ -7,7 +7,7 @@ var Get = require('es-abstract/2023/Get');
 var HasProperty = require('es-abstract/2023/HasProperty');
 var IsCallable = require('es-abstract/2023/IsCallable');
 var ToUint32 = require('es-abstract/2023/ToUint32');
-var ToObject = require('es-abstract/2023/ToObject');
+var ToObject = require('es-object-atoms/ToObject');
 var ToString = require('es-abstract/2023/ToString');
 
 var callBound = require('call-bind/callBound');
