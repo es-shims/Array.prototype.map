@@ -10,7 +10,7 @@ var ToUint32 = require('es-abstract/2024/ToUint32');
 var ToObject = require('es-object-atoms/ToObject');
 var ToString = require('es-abstract/2024/ToString');
 
-var callBound = require('call-bind/callBound');
+var callBound = require('call-bound');
 
 var isString = require('is-string');
 
