@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.8](https://github.com/es-shims/Array.prototype.map/compare/v1.0.7...v1.0.8) - 2024-12-19
+
+### Commits
+
+- [actions] split out node 10-20, and 20+ [`77ce870`](https://github.com/es-shims/Array.prototype.map/commit/77ce87092ab32686eebbaf92c8ce2e10578569cc)
+- [meta] sort package.json [`5e8dac9`](https://github.com/es-shims/Array.prototype.map/commit/5e8dac9bc8bb58a829c74f91653dd8e15ec99cd4)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `auto-changelog`, `tape` [`07bd204`](https://github.com/es-shims/Array.prototype.map/commit/07bd20414776da3b01fc709aaf1924763d3427af)
+- [Robustness] use callBind.apply [`07387b4`](https://github.com/es-shims/Array.prototype.map/commit/07387b4e9af8587977801e6d867725709f5b5da2)
+- [Refactor] use `call-bound` directly [`6e93cd2`](https://github.com/es-shims/Array.prototype.map/commit/6e93cd2422ad2d5655aa15f3e25a95a4ab41b15e)
+- [Deps] update `call-bind`, `es-abstract`, `is-string` [`ae1f62c`](https://github.com/es-shims/Array.prototype.map/commit/ae1f62c6766e249fca663cd2780a40975469fdbc)
+- [Tests] replace `aud` with `npm audit` [`2d9f6ef`](https://github.com/es-shims/Array.prototype.map/commit/2d9f6ef08efa0024798f05438874087174b4902f)
+- [Dev Deps] add missing peer dep [`dc18dd7`](https://github.com/es-shims/Array.prototype.map/commit/dc18dd7ebe4665aa98969bdf6b7a6d6964227a46)
+
 ## [v1.0.7](https://github.com/es-shims/Array.prototype.map/compare/v1.0.6...v1.0.7) - 2024-03-18
 
 ### Commits
